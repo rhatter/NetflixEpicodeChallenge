@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./imgs/Netflix-favicon.png" sizes="32x32" />
+    <title>Netflix</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/58eb6192a7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+  </head>
+  <body data-bs-theme="dark">
+    <nav class="topBar navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid position-relative">
+        <a class="navbar-brand" href="#"
+          ><img src="./imgs/Netflix_Logo_RGB.png" alt=""
+        /></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="dataNavbarDest"></ul>
+        </div>
+        <div class="d-flex gx-2 rightButtMenu position-absolute">
+          <div class="searchMovies d-flex">
+            <input type="text" />
+          </div>
+          <div
+            class="rounded-circle btn navButt lens position-relative d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div
+            class="rounded-circle btn navButt news position-relative d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-bell"></i>
+            <div class="dotNews position-absolute"></div>
+          </div>
+          <div
+            class="btn btn-light navButt profile position-relative nav-item dropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="true"
+          >
+            <div class="dotProfile position-absolute"></div>
+            <ul
+              class="dropdown-menu end-0"
+              data-bs-popper="static"
+              id="profileDropdown"
+            >
+              <li class="border-bottom">
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="col position-relative mx-1">
+                    <div
+                      class="rounded-circle btn btn-light navButt profile position-relative nav-item"
+                    >
+                      <div class="dotProfile position-absolute"></div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column mx-1">
+                    <span>Alessandro Pozzato</span>
+                    <span class="mail">alessandropoz@hotmail.com</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="fa-regular fa-user"></i>
+                  <span class="ms-2">Profile</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="fa-regular fa-star"></i>
+                  <span class="ms-2">Subscription</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="fa-solid fa-gear"></i>
+                  <span class="ms-2">Settings</span>
+                </a>
+              </li>
+              <li class="border-top">
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="fa-solid fa-power-off"></i>
+                  <span class="ms-2">Sign out</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class=""><i class="fa-solid fa-bars"></i></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section class="container-fluid d-flex justify-content-between searchBar">
+      <div class="d-flex align-items-center">
+        <span class="topic">TV Shows</span>
+        <div class="dropdown genres">
+          <button
+            class="btn btn-dark dropdown-toggle genres"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Genres
+          </button>
+          <ul class="dropdown-menu" data-bs-popper="static" id="genresDropdown">
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <span class="ms-2">Thriller</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <span class="ms-2">Family</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <span class="ms-2">Animation</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <span class="ms-2">Horror</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <span class="ms-2">Noir</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex align-items-center">
+        <div
+          class="selectStyle btn d-flex align-items-center justify-content-center"
+        >
+          <i class="fa-solid fa-align-left"></i>
+        </div>
+        <div
+          class="selectStyle btn d-flex align-items-center justify-content-center inactiveGrid"
+          id="gridButton"
+        >
+          <i class="bi bi-grid-fill"></i>
+        </div>
+      </div>
+    </section>
+    <!-- Sezione carosello con card -->
+    <section
+      class="carouselSection container-fluid d-flex justify-content-center d-column"
+    >
+      <div class="carouselArea container-fluid">
+        <div class="titleCaruselArea">
+          <p>Reccomended to you</p>
+        </div>
+        <div class="frameCarousel">
+          <div class="leftScorr navButt news position-relative hide">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="rightScorr navButt news position-relative">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+          <div
+            class="cardsCaruselArea cardCarousel1 d-flex justify-content-between"
+          ></div>
+        </div>
+      </div>
+      <!--Nuovo-->
+      <div class="carouselArea container-fluid">
+        <div class="titleCaruselArea">
+          <p>Watch It Again</p>
+        </div>
+        <div class="frameCarousel">
+          <div class="leftScorr navButt news position-relative hide">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="rightScorr navButt news position-relative">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+          <div
+            class="cardsCaruselArea cardCarousel1 d-flex justify-content-between"
+          ></div>
+        </div>
+      </div>
+      <!-- nuovo -->
+      <div class="carouselArea container-fluid">
+        <div class="titleCaruselArea">
+          <p>New Releases</p>
+        </div>
+        <div class="frameCarousel">
+          <div class="leftScorr navButt news position-relative hide">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="rightScorr navButt news position-relative">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+          <div
+            class="cardsCaruselArea cardCarousel1 d-flex justify-content-between"
+          ></div>
+        </div>
+      </div>
+      <!-- nuovo -->
+      <div class="carouselArea container-fluid">
+        <div class="titleCaruselArea">
+          <p>This Summer</p>
+        </div>
+        <div class="frameCarousel">
+          <div class="leftScorr navButt news position-relative hide">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="rightScorr navButt news position-relative">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+          <div
+            class="cardsCaruselArea cardCarousel1 d-flex justify-content-between"
+          ></div>
+        </div>
+      </div>
+      <!-- nuovo -->
+      <div class="carouselArea container-fluid">
+        <div class="titleCaruselArea">
+          <p>Before Christmas</p>
+        </div>
+        <div class="frameCarousel">
+          <div class="leftScorr navButt news position-relative hide">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="rightScorr navButt news position-relative">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+          <div
+            class="cardsCaruselArea cardCarousel1 d-flex justify-content-between"
+          ></div>
+        </div>
+      </div>
+      <!-- nuovo -->
+      <div class="carouselArea container-fluid">
+        <div class="titleCaruselArea">
+          <p>This Winter</p>
+        </div>
+        <div class="frameCarousel">
+          <div class="leftScorr navButt news position-relative hide">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="rightScorr navButt news position-relative">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+          <div
+            class="cardsCaruselArea cardCarousel1 d-flex justify-content-between"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <!--Fine sezione carosello card-->
+    <footer class="d-flex justify-content-center">
+      <div class="container-fluid col-lg-8">
+        <div class="logoContacts container-fluid d-flex justify-content-left">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="container-fluid d-flex">
+          <div class="col">
+            <p><a href="#">Audio and Subtitles</a></p>
+            <p><a href="#">Media Center</a></p>
+            <p><a href="#">Privacy</a></p>
+            <p><a href="#">Contact Us</a></p>
+          </div>
+          <div class="col">
+            <p><a href="#">Audio Description</a></p>
+            <p><a href="#">Investor Relation</a></p>
+            <p><a href="#">Legal Notices</a></p>
+          </div>
+          <div class="col">
+            <p><a href="#">Help Center</a></p>
+            <p><a href="#">Jobs</a></p>
+            <p><a href="#">Cookie Preferences</a></p>
+          </div>
+          <div class="col">
+            <p><a href="#">Gift cards</a></p>
+            <p><a href="#">Term of Use</a></p>
+            <p><a href="#">Corporate Information</a></p>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <p>© 1997 - 2019 Netflix, Inc.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

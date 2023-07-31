@@ -1,0 +1,577 @@
+.navButt {
+  color: gray;
+  aspect-ratio: 1;
+  width: 40px;
+}
+
+.navbar-toggler {
+  aspect-ratio: 5/4;
+  border-radius: 0;
+  border: white 1px solid;
+}
+.navbar-toggler > * {
+  color: white;
+}
+
+.rightButtMenu > * {
+  margin: 0px 3px;
+  width: auto;
+}
+.dotNews {
+  width: 12px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: #e50914;
+  top: 2px;
+  right: 2px;
+  border: solid 2px white;
+}
+
+.profile {
+  background-image: url("./assets/avatar-1.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px;
+  border: 0;
+  aspect-ratio: 1;
+}
+
+.rightButtMenu {
+  top: 0px;
+  right: 12px;
+  justify-content: flex-end;
+  height: 50px;
+  padding: 6px;
+}
+
+.profile > .dropdown-menu {
+  left: unset;
+}
+
+.dotProfile {
+  width: 13px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: #1acb98;
+  bottom: 2px;
+  right: 2px;
+  border: solid 3px white;
+}
+
+.searchMovies > input,
+.searchMovies {
+  width: 0%;
+  transition: all 0.6s ease;
+}
+.searchMovies > input.showed,
+.searchMovies.showed {
+  width: 30vw;
+  display: block;
+}
+
+.searchMovies > input {
+  padding: 0;
+  border: 0px;
+}
+.searchMovies > input.showed {
+  padding: 6px;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail {
+  color: grey;
+}
+
+#profileDropdown > li > a,
+#genresDropdown > li > a {
+  padding: 10px 10px;
+}
+
+.profile > ul {
+  padding: 0px 0px;
+}
+
+main {
+  background-color: #754ffe;
+  min-height: 30vh;
+}
+
+main > :nth-child(2) > img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  overflow: visible;
+}
+main > div > :nth-child(1) {
+  color: white;
+  font-size: 2.8rem;
+}
+
+main > div > :nth-child(2) {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.6rem;
+}
+
+.bottone1,
+.bottone2 {
+  padding: 15px 20px;
+  background-color: #1acb98;
+  color: rgb(241 254 255);
+  border-radius: 5px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.bottone2 {
+  background-color: white;
+  color: black;
+  margin-left: 0.2rem;
+}
+
+.bottone2:hover {
+  background-color: #1acb98;
+  color: white;
+}
+
+.listBarEl > :nth-child(1) {
+  background-color: #ffeeda;
+  width: 40px;
+  aspect-ratio: 1;
+  height: max-content;
+  color: #d0a171;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+.textBox > p {
+  margin-bottom: 0;
+}
+
+.listBarEl {
+  padding: 20px 20px;
+}
+
+.listBarEl {
+  padding: 1.2rem 0rem;
+}
+
+.textBox > :nth-child(1) {
+  font-weight: 500;
+}
+
+.textBox > :nth-child(2) {
+  color: rgb(159 159 159);
+}
+
+.unSelected {
+  font-weight: var(--fa-style, 100);
+}
+
+.techerProperties > img {
+  border-radius: 100%;
+  width: 30px;
+  aspect-ratio: 1;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-body > div,
+.card-body > p {
+  padding: 0.4rem 1rem;
+}
+
+section:nth-of-type(3) {
+  height: 200px;
+}
+.techerProperties :last-child {
+  right: 1rem;
+  position: absolute;
+}
+
+.techerProperties :nth-child(2) {
+  margin-left: 0.4rem;
+}
+
+.techerProperties {
+  padding: 0.6rem 1rem !important;
+}
+
+#profileDropdown i,
+#genresDropdown i {
+  width: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-body p {
+  margin-bottom: 0px;
+}
+
+.propertiesCard * {
+  margin-right: 0.5rem;
+}
+
+.card-body > :nth-child(1) {
+  padding-top: 1rem;
+}
+.card-body > :nth-child(4) {
+  padding-bottom: 1rem;
+}
+
+.starCard > *:nth-child(-n + 6) {
+  color: #fac445;
+}
+
+.starCard > *:nth-child(7) {
+  color: rgb(159 159 159);
+  font-size: 0.8rem;
+}
+.starCard > *:nth-child(n + 5) {
+  margin-right: 0.3rem;
+}
+
+.priceCard :nth-child(1) {
+  font-weight: bold;
+}
+.priceCard :nth-child(2) {
+  color: rgb(159 159 159);
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  margin-left: 0.2rem;
+}
+
+.propertiesCard :nth-child(3) {
+  color: #754ffe;
+}
+
+.techerProperties :nth-child(3) {
+  font-size: 0.8rem;
+  color: rgb(159 159 159);
+}
+
+.titleCaruselArea > p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.carouselSection {
+  padding: 1rem 0rem;
+  background-color: #141414;
+  flex-direction: column;
+}
+
+.cardsCaruselArea {
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.leftScorr,
+.rightScorr {
+  position: absolute !important;
+  display: flex;
+  left: 0%;
+  z-index: 4;
+  justify-content: center;
+  bottom: -23%;
+  align-items: center;
+  background-color: #b3b3b3;
+  color: white;
+  height: -webkit-fill-available;
+  border-radius: 0 !important;
+  width: 5%;
+  background: linear-gradient(90deg, #141414, transparent);
+  border: none;
+  transition: width 0.4s ease;
+}
+
+.leftScorr:hover,
+.leftScorr:active {
+  width: 10%;
+  background: linear-gradient(90deg, #141414, transparent);
+}
+.rightScorr {
+  right: 0%;
+  left: unset;
+  background: linear-gradient(270deg, #141414, transparent);
+}
+.rightScorr:hover,
+.rightScorr:active {
+  width: 10%;
+  background: linear-gradient(270deg, #141414, transparent);
+}
+
+.cardsCaruselArea {
+  position: relative;
+  transition: left 1.2s ease;
+  left: 0%;
+  width: 100%;
+  opacity: 100%;
+}
+
+.cardsCaruselArea > div {
+  padding: 0 0;
+}
+
+.toggled {
+  font-weight: 900;
+}
+
+.fa-bookmark {
+  cursor: pointer;
+}
+
+.frameCarousel {
+  /* overflow: hidden; */
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 4rem;
+  overflow-y: visible;
+  overflow-x: clip;
+}
+@media only screen and (max-width: 992px) {
+  #cardDestination > .row > div:nth-child(n + 7) {
+    display: unset;
+  }
+}
+
+.propertiesCard p {
+  font-size: 0.8rem;
+}
+.card-text {
+  display: -webkit-box;
+  /* max-width: 200px; */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.navbar-brand > img {
+  height: 50px;
+}
+
+.navbar,
+.navbar-brand {
+  padding: 0;
+  background: #141414 !important;
+}
+
+.navButt {
+  color: white;
+}
+.navButt:hover {
+  color: rgb(179, 179, 179);
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar a:hover {
+  color: rgb(179, 179, 179);
+}
+
+.nav-link:focus {
+  color: rgb(179, 179, 179);
+}
+
+.topBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.searchBar {
+  margin-top: 50px;
+  position: relative;
+  height: 60px;
+  background: #141414;
+}
+
+.genres.btn {
+  border-radius: 0;
+  border: white solid 1px;
+  margin: 0;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  width: 85px;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  padding: 8px;
+  margin-left: 1.2rem;
+}
+
+.dropdown-menu {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.searchBar .topic {
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 600;
+}
+
+.searchBar > :nth-child(1) {
+  margin-left: 1rem;
+}
+
+.selectStyle {
+  height: 27px;
+  aspect-ratio: 1;
+  border: solid white 1px;
+  padding: 0px 20px;
+  border-radius: 0;
+  color: white;
+  margin-left: 6px;
+  font-size: 1rem;
+}
+
+.carouselArea {
+  position: relative;
+  padding: 1.5rem 0rem;
+}
+
+.titleCaruselArea > p {
+  color: white;
+  padding-left: 2rem;
+  z-index: 14;
+  position: relative;
+}
+
+.card-img-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: none;
+}
+
+.card {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+  box-shadow: inset 0px 0px 65px 2px rgb(91 91 91),
+    inset 0px 0px 0px 2px rgb(255 255 255), 0px 0px 0px 0px rgb(0 0 0);
+  background: #8d8d8d;
+  transition: box-shadow 1s ease;
+}
+.card > img {
+  mix-blend-mode: hard-light;
+}
+.card:hover {
+  z-index: 2;
+  transform: scale(1.2);
+  animation: zoomIn 0.6s forwards;
+  box-shadow: inset 0px 0px 0px 1px grey,
+    inset 0px 0px 65px 2px rgb(255 255 255), 0px 0px 65px 2px rgb(0 0 0);
+}
+.card {
+  animation: zoomOut 0.6s;
+  transition: all 0.6s ease, opacity 1s ease;
+  transform: scale(1);
+}
+
+@keyframes zoomIn {
+  from {
+    z-index: 2;
+  }
+  to {
+  }
+}
+@keyframes zoomOut {
+  0% {
+    z-index: 2;
+  }
+  99% {
+  }
+  100% {
+    z-index: 1;
+  }
+}
+*/ footer {
+  padding: 6rem 0;
+  background-color: #141414;
+}
+
+.logoContacts > a > i {
+  margin-right: 1.4rem;
+  font-size: 1.6rem;
+}
+
+footer > div > div {
+  padding: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #adb5bd;
+}
+
+footer a:hover {
+  color: #f5f5f5;
+}
+
+.wrapped {
+  flex-wrap: wrap;
+  justify-content: center !important;
+}
+.hide {
+  display: none !important;
+}
+.hide2 {
+  display: none !important;
+}
+
+.selectStyle.inactiveGrid {
+  color: GREY;
+  border-color: GREY;
+}
+
+.dropdown-menu {
+  border-radius: 0;
+}
+.dropdown-menu a {
+  color: white;
+}
+
+.carouselArea {
+  opacity: 0%;
+  transition: opacity 2.3s ease 0.8s;
+}
+.fullOpacity {
+  opacity: 100%;
+}
+
+i {
+  pointer-events: none;
+}
+
+.dropdown-item:active {
+  background-color: black;
+  color: white;
+}
+
+.columnOfCard {
+  transition: width 0.3s ease, opacity 0.6s ease;
+}
+
+.noshow {
+  opacity: 0%;
+}
